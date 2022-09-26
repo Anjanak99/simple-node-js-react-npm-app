@@ -22,4 +22,5 @@ jobs:
    # - run: npm start
     - run: npm run build 
     - run: npm test
-  #  - run: npm eject
+    - name: package
+    - run: npm package
