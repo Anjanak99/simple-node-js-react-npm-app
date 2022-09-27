@@ -22,7 +22,7 @@ jobs:
    # - run: npm start
     - run: npm run build 
     - run: npm test
-    - run: npm install aws-sdk
+    - run: npm publish
     
     - run: |
        npm pack
