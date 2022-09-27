@@ -22,7 +22,7 @@ jobs:
    # - run: npm start
     - run: npm run build 
     - run: npm test
-    - run: npm publish
+
     
     - run: |
        npm pack
@@ -32,3 +32,5 @@ jobs:
       with:
          name: my-artifact
          path: my-app-0.1.0.tgz   
+         
+    - run: npm publish
