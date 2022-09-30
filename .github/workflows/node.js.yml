@@ -32,9 +32,7 @@ jobs:
       with:
          name: my-artifact
          path: my-app-0.1.0.tgz
-    - run: npm login
-    - run: npm whoami
-    - run: npm publish
+
 
          
     
