@@ -31,6 +31,10 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
          name: my-artifact
-         path: my-app-0.1.0.tgz   
+         path: my-app-0.1.0.tgz
+    - run: npm login
+    - run: npm whoami
+    - run: npm publish
+
          
     
