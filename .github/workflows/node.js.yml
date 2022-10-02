@@ -32,6 +32,16 @@ jobs:
       with:
          name: my-artifact
          path: my-app-0.1.0.tgz
+    - name: Deploy on AWS EC2
+      env:
+          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY  }}
+          HOSTNAME: ${{ secrets.HOSTNAME  }}
+          USER_NAME: ${{ secrets.USERNAME  }}
+         
+      run: |
+          echo "$PRIVATE_KEY" > private_key.pem && chmod 600 private_key.pem
+          ls -lrth
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ubuntu@43.205.138.200
 
 
          
