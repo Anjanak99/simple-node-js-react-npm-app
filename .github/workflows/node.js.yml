@@ -39,7 +39,7 @@ jobs:
       run: |
           echo "$PRIVATE_KEY" > private_key.pem && chmod 600 private_key.pem
           ls -lrth
-          ssh -o StrictHostKeyChecking=no -i private_key.pem ubuntu@13.235.254.198
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ubuntu@13.126.252.254
 
           scp -i private_key.pem /my-app-0.1.0.tgz ubuntu@13.126.252.254:/home/ubuntu/nodejs
          
