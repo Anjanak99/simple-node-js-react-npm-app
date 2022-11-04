@@ -1,80 +1,23 @@
 {
-
-
-
  "name": "my-app",
-
-
-
  "version": "0.1.0",
-
-
-
  "private": true,
-
-
-
  "main": "index.js",
-
-
-
  "publishConfig": {
-
-
-
-   "registry": "http://13.234.120.128:8081//repository/npm-react-app/"
-
-
-
+   "registry": "http://13.234.120.128:8081//repository/npm-react-app/
  },
   "files": [
     "dist/*"
-  ],  
-
-
-
+  ], 
  "dependencies": {
-
-
-
    "react": "^16.0.0",
-
-
-
    "react-dom": "^16.0.0",
-
-
-
    "react-scripts": "1.0.14"
-
-
-
  },
-
-
-
  "scripts": {
-
-
-
    "start": "react-scripts start",
-
-
-
    "build": "react-scripts build",
-
-
-
    "test": "react-scripts test --env=jsdom",
-
-
-
    "eject": "react-scripts eject"
-
-
-
  }
-
-
-
 }
