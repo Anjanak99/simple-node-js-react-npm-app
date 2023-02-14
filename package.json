@@ -12,18 +12,7 @@
 
 
  "main": "index.js",
-
-
-
- "publishConfig": {
-
-
-
-   "registry": "http://13.234.231.205:8081/repository/npm-react-app/"
-
-
-
- },
+ 
   "files": [
     "dist/*"
   ],  
