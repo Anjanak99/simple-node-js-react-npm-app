@@ -9,6 +9,10 @@ pipeline {
             CI = 'true'
         }
     stages {
+        stage('NPMRC') {
+            steps {
+                sh 'cat .npmrc'
+            }
         stage('Build') {
             steps {
                 sh 'npm install'
